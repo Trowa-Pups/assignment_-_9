@@ -1,4 +1,6 @@
 #Import or make a program that creates or edit a file or something that checks a file
+import os #using import os to check files in the computer
+
 #Ask the user to input what quiz number they want to create or edit
 #Ask the user to input their question 
 #Ask the user to input four options, and input the correct answer
