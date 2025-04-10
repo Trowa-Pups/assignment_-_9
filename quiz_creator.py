@@ -14,12 +14,25 @@ if os.path.exists(file_path): #To check if the file is there or not
         i = 0 
         while True: #To make it a loop so that the user can put how much questions they want in the file
             question = str(input(f"Please input the Question no.{i + 1}, if done, type 'exit': ")) #Ask the user to input their question 
-        
+
             if question.lower() == "exit": #If the user inputs "exit", make the program break and update the file with the new inputs of the user
                 print("Edit is done")
                 break
 
+            option_a = input("Input option A of the question: ")
+            option_b = input("Input option B of the question: ")
+            option_c = input("Input option C of the question: ")
+            option_d = input("Input option D of the question: ")
+
+            if option_a == option_b or option_a == option_c or option_a == option_d or option_b == option_c or option_b == option_d or option_c == option_d:
+                print("Same answer detected! Do you want to continue?")
+                
+        
+            right_answer = input("Input the right answer: ").lower()
+
             file.write(f"Question {i + 1}: {question} \n") #Print the input of the user in the text file
+            file.write(f"A: {option_a}\nB: {option_b}\nC: {option_c}\nD: {option_d}\n")
+
             i += 1 #To change the question number
 else:
     print(f"{quiz_number}" + " does not exist")
