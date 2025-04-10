@@ -41,7 +41,7 @@ if os.path.exists(file_path): #To check if the file is there or not
 
             file.write(f"Question {i + 1}: {question} \n") #Print the input of the user in the text file
             file.write(f"A: {option_a}\nB: {option_b}\nC: {option_c}\nD: {option_d}\n")
-            file.write(f"\n \n Right Answer: {right_answer}")
+            file.write(f"\n \n Right Answer: {right_answer} \n")
 
             i += 1 #To change the question number
 
@@ -80,6 +80,6 @@ else:
 
             file.write(f"Question {i + 1}: {question} \n") #Print the input of the user in the text file
             file.write(f"A: {option_a}\nB: {option_b}\nC: {option_c}\nD: {option_d}\n")
-            file.write(f"\n \n Right Answer: {right_answer}")
+            file.write(f"\n \n Right Answer: {right_answer} \n")
 
             i += 1 #To change the question number
